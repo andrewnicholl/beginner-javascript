@@ -1,12 +1,18 @@
 // Make a div
-
+const myDiv = document.createElement('div');
 // add a class of wrapper to it
-
+myDiv.classList.add('wrapper');
 // put it into the body
+console.log(myDiv);
+document.body.insertAdjacentElement('beforeEnd', myDiv);
 
 // make an unordered list
-
+const mylist = document.createElement('ul');
 // add three list items with the words "one, two three" in them
+const myItem1 = document.createElement('li');
+myItem1.innerText = 'one';
+mylist.insertAdjacentElement('afterbegin', myItem1);
+console.log(mylist);
 // put that list into the above wrapper
 
 // create an image
