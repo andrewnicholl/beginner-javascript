@@ -8,9 +8,27 @@ people.forEach((person, index) => {
   console.log(person.name);
 });
 
+// console.table(people);
+
 // Console Methods
 
 // Callstack
+function greet(name) {
+  doesntExist();
+  return `Hello ${name}`;
+}
+
+function go() {
+  const name = doctorize(greet('Wes'));
+  console.log(name);
+}
+
+function bootstrap() {
+  console.log('Starting the app')
+  go();
+}
+
+// bootstrap();
 
 // Grabbing Elements
 
@@ -24,7 +42,17 @@ people.forEach((person, index) => {
 
 // Some Setup Code
 
+function doALotOfStuff() {
+  console.group('Doing some stuff');
+  console.log('hi');
+  console.log('there');
+  console.log('u');
+  console.log('suk');
+  console.groupEnd('Doing some stuff');
+}
+
 function doctorize(name) {
+  // console.count(`running Doctorize for ${name}`);
   return `Dr. ${name}`;
 }
 

@@ -1,4 +1,15 @@
 /* eslint-disable */
+// const name = 'wes';
+// const middle = "topher";
+// const last = `bos`;
+
+// const sentence = 'she\'s so cool'
+// const sentence2 = `she's so "cool"`
+
+
+
+// wes's code
+/* eslint-disable */
 /*
 const name = 'wes';
 const middle = "topher";
