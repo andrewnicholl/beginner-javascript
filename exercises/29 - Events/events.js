@@ -77,3 +77,29 @@ cool.addEventListener('click', hooray);
 // buyButtons.forEach(loopBuyButtons);
 
 const buyButtons = document.querySelectorAll('button.buy');
+
+function handleBuyButtonClick(e) {
+  const button = e.target;
+  console.log('you clicked a button');
+  // console.log(button.textContent);
+  // console.log(parseFloat(e.currentTarget.dataset.price));
+  console.log(e.target);
+  console.log(e.currentTarget);
+  // event.stopPropagation();
+}
+
+buyButtons.forEach(function(buyButton) {
+  buyButton.addEventListener('click', handleBuyButtonClick);
+});
+
+window.addEventListener(
+  'click',
+  function(event) {
+    console.log('you clicked window');
+    console.log(event.target);
+    console.log(event.type);
+    console.log(event.bubbles);
+    // event.stopPropagation();
+  },
+  { capture: true }
+);
